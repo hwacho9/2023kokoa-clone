@@ -13,6 +13,21 @@
     font-size: 22px;
 }
 
+@keyframes settingIconMove {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: none;
+    }
+}
+.settings-setting:hover i {
+    animation: settingIconMove 1.3s ease-in-out infinite;
+}
+
 .settings__setting-column:last-child {
     opacity: 0.5;
 }
